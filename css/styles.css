@@ -388,7 +388,7 @@ Newsletter
     border: none;
     border-radius: 3px;
     margin: 5px 10px;
-    width: 55%;
+    width: 50%;
 }
 
 .newsletter input::placeholder{
@@ -404,7 +404,7 @@ Newsletter
     border-radius: 5px;
     font-size: 1rem;
     border: none;
-    width: 25%;
+    width: 20%;
 }
 
 .newsletter button:hover{
@@ -442,6 +442,7 @@ Newsletter
     .newsletter input{
         width: 25%;
         padding: 5px 30px 5px 10px;
+        margin-right: 5px;
     }
 
     .newsletter input::placeholder{
@@ -464,6 +465,7 @@ Index page styles
 .search{
     background-image: url("../img/knife-bg.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
     top: -10px;
     position: relative;
     height: 325px;
@@ -472,21 +474,20 @@ Index page styles
 .search h1{
     text-transform: none;
     max-width: 400px;
-    font-size: 2.8rem;
-    margin: 50px auto 20px auto;
+    font-size: 2.6rem;
+    margin: 60px auto 20px auto;
     line-height: 1.2;
     position: absolute;
-    top: 20px;
     left: 10%;
-    right: 10%;
+    right:10%;
 }
 
 .search_form {
     position: absolute;
-    top: 60%;
-    left:15%;
+    left: 15%;
     right: 15%;
-    margin-top: 10px;
+    margin-top: 20px;
+    top: 50%;
 }
 
 input[type="search"]{
@@ -494,7 +495,7 @@ input[type="search"]{
     height: 100%;
     border: 1px solid var(--accent-color);
     border-radius: 3px;
-    padding: 25px 45px;
+    padding: 20px 45px;
     background-image: url("../img/icons/search.svg");
     background-repeat: no-repeat;
     background-position: 4% 50%;
@@ -504,7 +505,7 @@ input[type="search"]{
 input[type="search"]::placeholder{
     color: var(--text-color);
     opacity: 0.4;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Latest meals block */
@@ -660,7 +661,10 @@ figure img:hover{
     .search_form{
         width: 300px;
         top: 60%;
-        left: 40%;
+        left: 50%;
+        right: 50%;
+        margin-top: 40px;
+        transform: translate(-50%, -50%);
     }
 
     .search_form input{
@@ -784,6 +788,10 @@ aside label{
     position: relative;
 }
 
+.search_recipe input[type="search"]::placeholder{
+    font-size: 0.9rem;
+}
+
 /* Grid block */
 
 .grid{
@@ -896,7 +904,6 @@ Videos page styles
         font-size: 0.8rem;
     }
 }
-
 
 
 
